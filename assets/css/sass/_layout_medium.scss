@@ -25,4 +25,17 @@
     #navbarToggleExternalContent{
         width: 40% !important;
     }
+
+    header{
+        h1{
+            font-size: 1.8em;
+
+            .globocom{
+                width: 130px;
+            }
+        }
+    }
+
+    .hidden-mobile{ display: inline-block; }
+    .visible-mobile{ display: none; }
 }

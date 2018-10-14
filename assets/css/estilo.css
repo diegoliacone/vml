@@ -3,13 +3,32 @@ h1, h2, h3 {
   font-family: 'open sans' !important;
   font-weight: bold; }
 
+.loading {
+  background-color: #ffffffd6;
+  background-image: url(../../assets/images/loader.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  display: none; }
+  .loading.show {
+    display: block; }
+
 header {
   background: #A80000;
   color: #fff;
-  padding: 10px; }
+  padding: 10px;
+  z-index: 150;
+  position: relative; }
   header h1 {
     text-align: center;
-    font-size: 1.4em; }
+    font-size: 1.2em;
+    margin-bottom: 0px; }
+    header h1 .globocom {
+      width: 60px; }
   header .navbar {
     padding: 0px; }
     header .navbar button.navbar-toggler {
@@ -23,7 +42,7 @@ header {
 #navbarToggleExternalContent {
   margin: 0 -15px;
   position: absolute;
-  z-index: 1;
+  z-index: 150;
   width: 100%; }
   #navbarToggleExternalContent #nav-menu {
     left: 0px;
@@ -76,6 +95,12 @@ header {
         text-align: center;
         padding: 10px 5px 0; }
 
+#root canvas.chart {
+  height: 50vh !important; }
+
+.hidden-mobile {
+  display: none; }
+
 @media (min-width: 576px) {
   .info .info-box .content .title {
     padding: 10px 20px;
@@ -89,8 +114,22 @@ header {
 
 @media (min-width: 768px) {
   #navbarToggleExternalContent {
-    width: 40% !important; } }
+    width: 40% !important; }
+  header h1 {
+    font-size: 1.8em; }
+    header h1 .globocom {
+      width: 130px; }
+  .hidden-mobile {
+    display: inline-block; }
+  .visible-mobile {
+    display: none; } }
 
 @media (min-width: 970px) {
   .info .info-box .content .title {
-    font-size: 30px; } }
+    font-size: 30px; }
+  header .navbar button.navbar-toggler .navbar-toggler-icon::before {
+    font-size: 1.8em; }
+  header h1 {
+    font-size: 2.8em; }
+    header h1 .globocom {
+      width: 200px; } }

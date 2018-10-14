@@ -8,4 +8,17 @@
             }
         }
     }
+     
+    header{
+        .navbar button.navbar-toggler .navbar-toggler-icon::before{
+            font-size: 1.8em;
+        }
+        h1{
+            font-size: 2.8em;
+
+            .globocom{
+                width: 200px;
+            }
+        }
+    }
 }
