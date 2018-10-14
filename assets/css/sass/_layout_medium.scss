@@ -1,0 +1,28 @@
+@media(min-width: 576px){
+    .info {    
+        .info-box{
+            .content {
+                .title {
+                    padding: 10px 20px;
+                    text-align: left;
+    
+                    .fa{
+                        display: inline-block;
+                    }
+                }
+    
+                .value{
+                    padding: 10px 15px 5px;
+                    text-align: left;
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px){
+    #navbarToggleExternalContent{
+        width: 40% !important;
+    }
+}
