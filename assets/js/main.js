@@ -62,7 +62,6 @@ function drawChart(dadosChart) {
     //Preparando os dados para serem exibidos no gráfico
     for (var key in dadosChart) {
         lab = key.split('-');
-        console.log(i + ' - ' +lab);
         label[i] = meses[lab[1]-1] + ' / ' + lab[0];
         dados[i] = dadosChart[key];
         i++;
